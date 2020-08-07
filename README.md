@@ -1,7 +1,7 @@
-# satoshi
+# > satoshi
 Manipulate satoshi-related prices in Python 3, simple and sweet 💵 ₿🍬
 
-<img src="img/cover.png" align="center" />
+<img src="img/ccover.png" align="center" />
 
 #### Why complicate?
 
@@ -9,12 +9,12 @@ The idea behind this project is to provide Python programmers with a simple, lig
 
 This can be extremely useful on future/perpetual markets and crypto exchanges that don't automatically associate XBT balances to an USD value. With > satoshi you can use a single function to convert your satoshis to any fiat currency :)
 
-No need to handle more requests and currency mangling in your code, simply use > satoshi and, therefore, [CryptoCompare's](cryptocompare.com) open API.
+No need to handle more requests and currency mangling in your code, simply use > satoshi and, therefore, [CryptoCompare's](https://www.cryptocompare.com) open API.
 
 #### Installation
 
 ```bash
-"pip install satoshi"
+pip install satoshi
 ```
 
 #### Usage
@@ -24,6 +24,8 @@ include satoshi
 satoshi.to_fiat(984223) # satoshi to usd
 satoshi.to_fiat(18923, 'BRL') # satoshi to reais
 ```
+
+Feel free to run example.py for a demo.
 
 #### Notes
 

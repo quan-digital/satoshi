@@ -40,6 +40,8 @@ if __name__ == "__main__":
     satoshis = bitmex_balance.get('amount')
     usd = satoshi.to_fiat(satoshis)
     bitmex_balance['usdValue'] = usd
+    brl = satoshi.to_fiat(satoshis, 'BRL')
+    bitmex_balance['brlValue'] = brl
 
     # Result
     print("\n\nNew Balance Object: \n")
