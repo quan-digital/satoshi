@@ -1,16 +1,32 @@
 # satoshi
 Manipulate satoshi-related prices in Python 3, simple and sweet 💵 ₿🍬
 
-<img src="img/cover.jpeg" align="center" />
+<img src="img/cover.png" align="center" />
 
-#### Public topics subscribed
+#### Why complicate?
+
+The idea behind this project is to provide Python programmers with a simple, light and intuitive package to manipulate satoshis.
+
+This can be extremely useful on future/perpetual markets and crypto exchanges that don't automatically associate XBT balances to an USD value. With > satoshi you can use a single function to convert your satoshis to any fiat currency :)
+
+No need to handle more requests and currency mangling in your code, simply use > satoshi and, therefore, [CryptoCompare's](cryptocompare.com) open API.
+
+#### Installation
 
 ```bash
-"chat",                // Trollbox chat - cummulative push
-"instrument",          // Instrument updates including turnover and bid/ask - continuous push overwrite 
-"liquidation",         // Liquidation orders as they are entered into the book - push refreshed after 20 seconds
-"quoteBin1m",          // 1-minute quote bins - cummulative push
-"tradeBin1m",          // 1-minute trade bins - cummulative push
+"pip install satoshi"
 ```
 
+#### Usage
+
+```python
+include satoshi
+satoshi.to_fiat(984223) # satoshi to usd
+satoshi.to_fiat(18923, 'BRL') # satoshi to reais
+```
+
+#### Notes
+
 Project idealized while listening to [this](https://open.spotify.com/track/3X4dJnyoxhFbNw1bX8qas0?si=M4xhiD7vQyerQnMLxfuyfQ) song.
+
+Feel free to become a collaborator.
