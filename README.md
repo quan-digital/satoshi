@@ -20,7 +20,7 @@ pip install satoshi
 #### Usage
 
 ```python
-include satoshi
+import satoshi
 satoshi.to_fiat(984223) # satoshi to usd
 satoshi.to_fiat(18923, 'BRL') # satoshi to reais
 ```
