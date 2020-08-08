@@ -5,7 +5,7 @@ from os.path import join, dirname
 here = dirname(__file__)
 
 setup(name='satoshi',
-      version='0.1.3',
+      version='0.1.4',
       description='Manipulate satoshi-related prices in Python 3, simple and sweet.',
       long_description=open(join(here, 'README.md')).read(),
       license='MIT',
@@ -13,7 +13,7 @@ setup(name='satoshi',
       author='canokaue',
       author_email='kaue.cano@quan.digital',
       url='https://github.com/quan-digital/satoshi/',
-      download_url = 'https://github.com/quan-digital/satoshi/dist/satoshi-0.1.3.tar.gz',
+      download_url = 'https://github.com/quan-digital/satoshi/dist/satoshi-0.1.4.tar.gz',
       install_requires=[
         'requests==2.23.0'
       ],
@@ -35,3 +35,7 @@ setup(name='satoshi',
       ],
       include_package_data=True
       )
+
+# PyPi publish flow
+# python3 setup.py sdist bdist_wheel
+# python3 -m twine upload dist/*

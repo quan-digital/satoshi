@@ -26,7 +26,8 @@ def to_fiat(satoshis=1, fiat='USD'):
     response = requests.get(quote_url)
     btc_value = response.json().get(fiat.upper())
     fiat_value = float(satoshis * BTC_FRACTION) * float(btc_value)
-    return '{:.2f}'.format(fiat_value)
+    return float('{:.2f}'.format(fiat_value))
+
 
 def print_art():
     '''Read ASCII art from bitcoin_art.txt and print directly'''
